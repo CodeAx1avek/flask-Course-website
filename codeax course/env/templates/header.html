@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <!-----Bootstrap Link ---->
+    <link rel="icon" href="/static/icon.jpg" type="image/x-icon">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Required meta tags -->
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet">
+
+
+    <title>{%block title%}Learn Hacking | CodeAx1{%endblock title%}</title>
+    <scrip src="https://kit.fontawesome.com/6e51de79c4.js" crossorigin="anonymous">
+        </script>
+
+</head>
+
+<body>
+
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #ecf0f3;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static',filename='codeax1_img.jpg' ) }}" alt="" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+                <div class="collapse text-center navbar-collapse" id="navbarNavAltMarkup">
+                    <div style="font-family: 'Roboto Slab', serif;" class="navbar-nav">
+                        <a class="nav-link text-dark active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link text-dark" href="{{ url_for('coursefree' ) }}">Free</a>
+                        <a class="nav-link text-dark" href="/plan">Plan</a>
+                        {% if session.user_id %}
+                        <!--LOGOUT POPUP-->
+                        <!-- Button trigger modal -->
+<a type="button" class="nav-link text-dark"  data-toggle="modal" data-target="#exampleModal">
+    Logout
+</a>  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hey Hacker</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            You will logout by clicking logout button...<br>
+          See You Back Again...<br> Admin:- CodeAx1
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button"><a class="btn btn-danger" href="/logout">Logout</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <h3>  </h3> -->
+  <!--Logout POPUP End-->
+
+
+                        </div>
+                        <div mx="2">
+                        <a href='/myvideo'><button type="button" class="btn btn-outline-dark my-4 px-4"
+                            style="font-family: 'Balsamiq Sans', cursive;">My Course</button></a>
+                           
+                            {% else %}
+                            <a class="nav-link text-dark" href="{{ url_for('login' ) }}" tabindex="-1"
+                            aria-disabled="true">Login/Register</a>
+                            {% endif %}
+                            
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+
+    <div class="">
+        <div class="text-center py-4 container" style="background-color: #ecf0f3;">
+            <div class="text-dark">
+                <h3 class="text-dark" style="font-family:  'Times New Roman' serif;"> We Make You Different
+                </h3>
+                <h2 style="font-family:  'Times New Roman', cursive;"> -We Are Anonymous-
+                </h2>
+            </div>
+            <br>
+
+            <p class="py-3 text-dark" style="font-family: 'Chakra Petch', sans-serif;">You are just one step away from
+                becoming a pro Hacker
+            </p>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        </div>
+    </div>
+    {% block header %}
+
+    {% endblock header %}
+    
+    <div class="text-center my-2">
+        <a href="https://t.me/avekgaming" target=*_blank"><img class="my-3 mx-2" style="border-radius:50%;"
+            src="{{ url_for('static', filename='tele.png') }}" alt="" width="40" height="40"></a>
+        <a href="https://www.youtube.com/channel/UC-Q6ZcOtcx1gZ9fI5MDDt3w" target=*_blank"><img class="my-2 mx-2"
+            style="border-radius:50%;" src="{{ url_for('static', filename='yt.png') }}" alt="" width="40" height="40"></a>
+        <a href="https://www.instagram.com/codeax1/?utm_medium=copy_link" target=*_blank"><img class="my-2 mx-2"
+            style="border-radius:50%;" src="{{ url_for('static', filename='insta.png') }}" alt="" width="40" height="40"></a>
+      </div><br>
+      <hr class="border-dark">
+      <div class="container text-center text-dark">
+        <a href="/" style="text-decoration:none; font-family: 'Kanit', sans-serif;" class="text-dark">Home</a>
+        <hr class="border-dark">
+        <a href="/exploreplan" style="text-decoration:none; font-family: 'Kanit', sans-serif;"
+          class="text-dark">Explore Plan</a>
+        <hr class="border-dark">
+        <a href="/contact" style="text-decoration:none; font-family: 'Kanit', sans-serif;"
+          class="text-dark">Contact us</a>
+        <hr class="border-dark">
+        <a href="mailto: workforavek@gmail.com" style="text-decoration:none; font-family: 'Kanit', sans-serif;"
+          class="text-dark">Email us</a>
+        <hr class="border-dark">
+      </div>
+      <div class="text-center py-4">
+        <p class="text-dark" style="font-family: 'Chakra Petch', sans-serif;"> Copyright © 2022, CodeAx1-Avek<br> All
+          rights reserved.
+        </p><br>
+      </div>
+      <script>$('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })</script>
+      </body>
+      </html>

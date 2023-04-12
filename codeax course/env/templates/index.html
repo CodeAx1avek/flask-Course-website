@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <!-----Bootstrap Link ---->
+
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <!-- Required meta tags -->
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet">
+
+
+  <title>{%block title%}Learn Hacking | CodeAx1{%endblock title%}</title>
+  <scrip src="https://kit.fontawesome.com/6e51de79c4.js" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-light container" style="background-color: #ecf0f3;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="{{ url_for('static',filename='codeax1_img.jpg' ) }}" alt="" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+
+          </span>
+        </button>
+        <div class="collapse text-center navbar-collapse" id="navbarNavAltMarkup">
+          <div style="font-family: 'Roboto Slab', serif;" class="navbar-nav">
+            <a class="nav-link text-dark active" aria-current="page" href="/">Home</a>
+            <a class="nav-link text-dark" href="/register">Free</a>
+            <a class="nav-link text-dark" href="/register">Plan</a>
+            <a class="nav-link text-dark" href="/register" tabindex="-1"
+              aria-disabled="true">Register/Login</a>
+          </div>
+          <a href='/register'><button type="button" class="btn btn-outline-dark my-4 px-4"
+              style="font-family: 'Balsamiq Sans', cursive;"><strike>My Course</strike></button></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="">
+    <div class="text-center py-4 container" style="background-color: #ecf0f3;">
+      <div class="text-dark">
+        <h3 class="text-dark" style="font-family:  'Times New Roman' serif;"> We Make You Different
+        </h3>
+        <h2 style="font-family:  'Times New Roman', cursive;"> -We Are Anonymous-
+        </h2>
+      </div>
+      <br>
+
+      <p class="py-3 text-dark" style="font-family: 'Chakra Petch', sans-serif;">You are just one step away from
+        becoming a pro Hacker
+      </p>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    </div>
+  </div>
+
+  <div class="container" style="background-color:#ecf0f3;">
+
+    <h3 style="border-bottom: 2px solid black;" class="py-2 pt-4 mx-4 text-center">Course Aim:</h3>
+
+    <div class="my-4">
+
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <h5 class="text-danger pt-4" style="font-family: 'Merriweather', serif;">
+          Top Cyber Defence Ranked Country
+        </h5>
+        <p class="" style="font-family: 'Manrope', sans-serif;">
+          United States and China is ranked number one in this category, followed by the Netherlands and France, then
+          the Canada.
+        </p><br>
+      </div><br>
+
+      <div class="shadow p-3 mb-5 bg-body rounded">
+        <h5 class="text-danger pt-4" style="font-family: 'Merriweather', serif;">
+          Top Hacking Group
+        </h5>
+        <p class="" style="font-family: 'Manrope', sans-serif;">
+          Anonymous-The decentralized group originated in 2003 on the imageboard 4chan. It is a leaderless organisation
+          which projects itself as the cyber guardian of human rights and vows to fight against injustice through the
+          weapon of “hacking”.
+        </p><br>
+      </div><br>
+
+      <div class="shadow p-3 mb-5 bg-body rounded">
+        <h5 class="text-danger pt-4" style="font-family: 'Merriweather', serif;">
+          Indian Hacking Community
+        </h5>
+        <p class="" style="font-family: 'Manrope', sans-serif;">
+          Ghost Squad Hackers, or by the abbreviation "GSH" is a politically motivated hacktivist team from India.
+        </p><br>
+      </div><br>
+
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <h5 class="text-danger pt-4" style="font-family: 'Merriweather', serif;">
+          Earn Respect
+        </h5>
+        <p class="" style="font-family: 'Manrope', sans-serif;">
+          Show your skill for good stuff. Every industry is improved by hackers: From rice cakes to rocket ships,
+          engineering makes it — and then hacking makes it better. This is why hacking is such an extremely valuable
+          skill for any teenager to learn
+        </p><br>
+      </div><br><br>
+      <hr><br>
+      <div class="text-center py-4 px-3">
+        <p class="text-danger fa-4x fa fa-user-circle-o"></p>
+        <h3 style="font-family: 'Volkhov', serif;" class="text-dark">Start your journey<br>as a Hacker.</h3>
+      </div>
+
+      <div class="container" style="background-color: #ecf0f3;">
+        <div class="text-center">
+          <img class="my-3" src="{{ url_for('static', filename='codeax2_img.jpg' ) }}" alt="" width="60" height="60">
+          <h5 class="text-dark" style="font-family:  'Times New Roman', serif;"> We Make You Different</h5>
+          <h4 style="font-family: 'Times New Roman'" ; class="text-dark"> -We Are Anonymous-
+          </h4>
+          <p class="py-3 text-dark" style="font-family: 'Chakra Petch', sans-serif;">You are just one step away from
+            becoming a Pro Indian Hacker.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <span class="pl-4 fa fa-play-circle"></span><span style="font-family: 'Kanit', sans-serif;">Best Video
+              Tutorials</span><br><br>
+            <span class="pl-4 fa fa-file-code-o"></span><span style="font-family: 'Kanit', sans-serif;">No Coding
+              Required</span><br><br>
+            <span class="pl-4 fa fa-cogs"></span><span style="font-family: 'Kanit', sans-serif;">Scripting
+              Tools</span><br><br>
+
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        <div class="my-2 text-center">
+
+          <a href="/register"><button type="button" class="btn btn-dark px-4 text-center col-8 py-2"><b>Start Course
+                for Free</b></button></a><br><br>
+
+          <a href="/register"><button type="button" class="btn btn-outline-dark px-4 text-center col-8 py-2"><b>Explore our
+                Courses</b></button></a>
+        </div><br><br>
+
+      </div>
+    </div>
+    <div class="text-center my-2">
+      <a href="https://t.me/avekgaming" target=*_blank"><img class="my-3 mx-2" style="border-radius:50%;"
+          src="{{ url_for('static', filename='tele.png') }}" alt="" width="40" height="40"></a>
+      <a href="https://www.youtube.com/channel/UC-Q6ZcOtcx1gZ9fI5MDDt3w" target=*_blank"><img class="my-2 mx-2"
+          style="border-radius:50%;" src="{{ url_for('static', filename='yt.png') }}" alt="" width="40" height="40"></a>
+      <a href="https://www.instagram.com/codeax1/?utm_medium=copy_link" target=*_blank"><img class="my-2 mx-2"
+          style="border-radius:50%;" src="{{ url_for('static', filename='insta.png') }}" alt="" width="40"
+          height="40"></a>
+    </div><br>
+    <hr class="border-dark">
+
+    <div class="container text-center text-dark">
+      <a href="/" style="text-decoration:none; font-family: 'Kanit', sans-serif;" class="text-dark">Home</a>
+      <hr class="border-dark">
+      <a href="/register" style="text-decoration:none; font-family: 'Kanit', sans-serif;" class="text-dark">Explore Plan</a>
+      <hr class="border-dark">
+      <a href="/register" style="text-decoration:none; font-family: 'Kanit', sans-serif;" class="text-dark">Contact
+        us</a>
+      <hr class="border-dark">
+      <a href="/register" style="text-decoration:none; font-family: 'Kanit', sans-serif;" class="text-dark">Report
+        a Bug</a>
+      <hr class="border-dark">
+      <a href="mailto: workforavek@gmail.com" style="text-decoration:none; font-family: 'Kanit', sans-serif;"
+        class="text-dark">Email us</a>
+      <hr class="border-dark">
+    </div>
+    <div class="text-center py-4">
+      <p class="text-dark" style="font-family: 'Chakra Petch', sans-serif;"> Copyright © 2022, CodeAx1-Avek<br> All
+        rights reserved.
+      </p><br>
+        
+    </div>
+</body>
+
+</html>

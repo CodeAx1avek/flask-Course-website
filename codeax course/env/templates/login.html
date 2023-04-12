@@ -1,0 +1,42 @@
+{% extends 'header.html' %}
+{% block header %}
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeAx1-Login</title>
+  </head>
+    <body class="bg-nav">
+      <nav class="navbar">
+      </nav>
+      <div class="container">
+          <div class="card  mt-300">
+            <div class="card-body">
+              <form class='form'  method="post" action='/login_validator'>
+                <label>Email</label><br>
+                <input type="email" placeholder="Email" class="form-control" name="email" required><br>
+                <label>
+                  Password
+                </label><br>
+                <input type="password" placeholder="Password"   class="form-control" name="password" required autocomplete="off"><br>
+                <input type="submit" class="btn btn-outline-dark" value="Login"><br>
+                <!--Alert Login Error-->
+                <br>
+                <!-- <strong><h3>{{ error }}</h3></strong>   -->
+                <strong><h3>{{ info }}</h3></strong>
+                <!--ALert login end-->
+              </form>
+              <br>
+              <!-- {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %} -->
+              
+              <p class="mt-2">Not a memeber? <a href="/register" style="text-decoration: none;">Create Account</a></p>
+  
+{% endblock header %}

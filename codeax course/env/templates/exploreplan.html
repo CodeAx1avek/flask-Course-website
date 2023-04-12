@@ -1,0 +1,128 @@
+{% extends 'header.html' %}
+{% block header %}
+<div class="text-center">
+  <h3 class="mt-4 pt-4" style="font-family: 'Cabin', sans-serif;"> Explore Top Hacking Courses </h3>
+  <p class="text-secondary" style="font-family: 'Padauk', sans-serif;">check out our best course and get what you
+      need. </p>
+
+</div>
+
+<br>
+<div style="height:9px; background-color:#ededed;">
+</div>
+<br>
+
+<div class="container my-4 ">
+  <div class="card">
+    <h4 class="card-header text-center text-white bg-dark" style="font-family: 'Anton', sans-serif;">Beginner Course</h4>
+    
+      
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-6">
+           <h6 class="text-secondary">Price</h6>
+           <h3 class="text-info">₹0            </h3>
+        </div>
+        <div class="col-6">
+          <h6 class="text-secondary">Validity</h6>
+          <h6 class="text-dark">Lifetime</h6>
+        </div>
+      </div>
+          
+        <span class="bg-success px-1 py-1 text-white" style="border-radius: 8px; font-size: 12px;">Save 100%</span>
+          <br><br>
+          
+        <div class="my-1">
+          <span class="fa text-primary fa-play-circle-o"></span>
+          <span style="font-family: 'Cabin', sans-serif;">5  Video Tutorials
+          </span>
+        </div>
+          
+          
+        <div class="my-1">
+          <span class="fa text-primary fa-file-o"></span>
+          <span style="font-family: 'Cabin', sans-serif;">No Coding Needed</span>
+        </div>
+        <div class="my-1">
+          <span class="fa text-primary fa-cog"></span>
+          <span style="font-family: 'Cabin', sans-serif;"> Tools Provided</span>
+            <br>
+        </div>
+       
+        <br>
+        <br>
+          {% if session.user_id %}
+          <div class="text-center">
+            <a href="/myvideo"><button class="btn btn-outline-dark font-weight-bold col-8 px-4 py-2">Enroll Now</button></a>
+            </div>
+          {% else %}
+          <div class="text-center">
+          <button onclick="myFunction()" class="btn btn-outline-dark font-weight-bold col-8 px-4 py-2">Enroll Now</button><br>
+          <strong><small id="enroll"></strong></small>
+          </div>
+          <script>
+            function myFunction() {
+              document.getElementById("enroll").innerHTML = "You are not loggted in..Please Login in";
+            }
+            </script>
+          {% endif %}
+      </div>
+      </div>
+    </div>
+</div>
+
+<br><div style="height:9px; background-color:#ededed;"></div><br>
+
+
+<div class="container my-4 " style="background-color: #ededed;">
+<div class="container my-4 " style="background-color: #ededed;"></div>
+    <div class="card" style="background-color: #ededed;">
+        <h4 class="card-header text-center text-white bg-dark" style="font-family: 'Anton', sans-serif;">Advance
+            Course</h4>
+
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-6">
+                    <h6 class="text-secondary">Price</h6>
+                    <h3 class="text-danger">₹149 </h3>
+                </div>
+                <div class="col-6">
+                    <h6 class="text-secondary">Validity</h6>
+                    <h6 class="text-dark">30days </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="my-1">
+                        <span class="fa text-primary fa-play-circle-o"></span>
+                        <span style="font-family: 'Cabin', sans-serif;">0/20 Video Tutorials
+                        </span>
+                    </div>
+
+
+                    <div class="my-1">
+                        <span class="fa text-primary fa-file-o"></span>
+                        <span style="font-family: 'Cabin', sans-serif;">No Coding Required</span>
+                    </div>
+                    <div class="my-1">
+                        <span class="fa text-primary fa-cog"></span>
+                        <span style="font-family: 'Cabin', sans-serif;"> All Tool Provided Premium</span>
+                        <br>
+                    </div>
+
+                </div>
+
+            </div><br>
+            <hr>
+            <center><b>
+                    <h3>Comming Sooon</h3>
+                </b></center>
+            <hr>
+            <div class="text-center">
+                <a href="#"><button class="btn btn-dark font-weight-bold col-8 px-4 py-2" disabled
+                        data-bs-toggle="button" autocomplete="off">Enroll Now</button></a>
+                          <br>
+                          <br><div style="height:9px; background-color:#ededed;"></div><br>
+                          <br><div style="height:9px; background-color:#ededed;"></div><br>
+                        
+    {% endblock header %}
