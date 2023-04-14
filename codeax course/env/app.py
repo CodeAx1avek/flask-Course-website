@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-conn = mysql.connector.connect(host='db4free.net',user='avekisopyeah',password='weareanonymous612',database='flasktutorial')
+conn = mysql.connector.connect(host='db4free.net',user='avekisopyeah',password='',database='flasktutorial')
 cursor = conn.cursor()
 
 @app.route('/')
